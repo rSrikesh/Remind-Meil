@@ -1,0 +1,121 @@
+[
+    [
+        {
+            "event": "Fwd: Pwc Workshop on 18th March from 2 pm to 4.30 pm",
+            "tags": [
+                "date",
+                "workshop on"
+            ],
+            "Date": [
+                [
+                    "fri, 24 mar 2023",
+                    4
+                ],
+                [
+                    "18th march '23",
+                    "2024",
+                    "18th march",
+                    "pre-final year",
+                    "fri, 24 mar 2023"
+                ]
+            ],
+            "Time": [
+                "23:27\r\n",
+                "2:00 pm to 3.30 pm",
+                "2 pm to 4.30 pm"
+            ],
+            "Links": [
+                [
+                    null,
+                    1000000
+                ],
+                []
+            ],
+            "Venue": [
+                "campus",
+                "amrita coimbatore campus"
+            ],
+            "Contacts": [
+                [],
+                [
+                    "arminarlert935@gmail.com",
+                    "srikeshravikumar@gmail.com"
+                ]
+            ],
+            "Organizations": [
+                "btech cse",
+                "btech cse(ai",
+                "salesforce",
+                "amrita",
+                "pwc"
+            ],
+            "virtual": false
+        },
+        {
+            "event": "Successfully registered for LINE CTF 2023",
+            "tags": [],
+            "Date": [
+                "",
+                []
+            ],
+            "Time": [],
+            "Links": [
+                [
+                    null,
+                    1000000
+                ],
+                []
+            ],
+            "Venue": [],
+            "Contacts": [
+                [],
+                []
+            ],
+            "Organizations": [],
+            "virtual": false
+        }
+    ],
+    [
+        {
+            "event": "Broadridge India Innovation Hackathon",
+            "tags": [
+                "hackathon",
+                "submit",
+                "register",
+                "internship",
+                "date"
+            ],
+            "Date": [
+                [
+                    "today",
+                    693
+                ],
+                [
+                    "today",
+                    "may 07, 2023"
+                ]
+            ],
+            "Time": [
+                "11:55 pm"
+            ],
+            "Links": [
+                [
+                    null,
+                    1000000
+                ],
+                []
+            ],
+            "Venue": [
+                "india"
+            ],
+            "Contacts": [
+                [],
+                []
+            ],
+            "Organizations": [
+                "broadridge"
+            ],
+            "virtual": false
+        }
+    ]
+]

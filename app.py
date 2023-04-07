@@ -4,9 +4,10 @@ import email
 from email.header import decode_header
 from email2rem import Email2Reminder
 import json
-from pprint import pprint
+import os
 
 app = Flask(__name__)
+filename = 'data.json'
 
 @app.route('/data', methods=['GET', 'POST'])
 def data():
@@ -18,7 +19,7 @@ def data():
     # password = "bxizxsbwaxgdelhv"
     imap.login(username, password)
     imap.select('inbox')
-    criteria = '(ALL)'
+    criteria = '(UNSEEN)'
     result, data = imap.search(None, criteria)
     mails = []
 
@@ -41,7 +42,23 @@ def data():
         
 
     imap.logout()
-    return jsonify(mails)
+
+    if len(mails) == 0:
+        return "No new mails"
+
+    
+    if not os.path.exists(filename):
+        with open(filename, mode='w', encoding='utf-8') as f:
+            json.dump([], f,indent=4)
+        
+    with open(filename) as feedsjson:
+        feeds = json.load(feedsjson)
+
+    feeds.append(mails)
+    with open(filename, mode='w') as f:
+        f.write(json.dumps(feeds, indent=4))
+
+    return "debug"
 
     
 app.run(host='127.0.0.1',port=5001,debug=True)
